@@ -1,0 +1,35 @@
+.geo {
+	margin-top: 80px;
+	&__content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+	&__aside {
+		justify-content: end;
+		display: grid;
+		&-point {
+			margin-top: 30px;
+			&:first-child {
+				margin-top: 0;
+			}
+			&-title {
+				@include text-body($primary-color, 20px);
+			}
+			&-text {
+				@include text-body($primary-color, 16px);
+				margin-top: 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: $tablet) {
+	.geo__content {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+}

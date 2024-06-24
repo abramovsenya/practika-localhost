@@ -1,0 +1,17 @@
+.profile {
+	margin-top: 100px;
+	&__content {
+	}
+	&__title {
+		@include text-body($primary-color, 36px);
+	}
+	&__show {
+		background-color: $primary-color;
+	}
+	&__title-buy {
+		margin-top: 40px;
+		@include text-body($black-color, 36px);
+		text-align: center;
+		padding: 40px 0;
+	}
+}

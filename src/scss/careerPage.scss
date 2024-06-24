@@ -1,0 +1,121 @@
+.career {
+	background: url('/src/images/icons/bg.svg') center / cover no-repeat;
+	margin-top: 50px;
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__aside {
+		max-width: 450px;
+	}
+	&__title {
+		@include text-body($primary-color, 36px);
+	}
+	&__subtitle {
+		@include text-body($primary-color, 18px);
+		margin: 15px 0 60px 0;
+	}
+	&__button {
+		color: $primary-color;
+		font-size: 16px;
+		font-family: 'Days one', sans-serif;
+		text-decoration: none;
+		padding: 14px 24px;
+		background-color: $secondary-color;
+		border-radius: 8px;
+		text-decoration: none;
+		transition: all 0.2s ease-in-out;
+	}
+}
+//
+.team {
+	margin-top: 60px;
+	&__content {
+		text-align: center;
+	}
+	&__title {
+		@include text-body($primary-color, 36px);
+		margin-bottom: 50px;
+	}
+	&__about {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__description {
+		text-align: end;
+		@include text-body($primary-color, 18px);
+		max-width: 540px;
+	}
+}
+//
+.we {
+	margin-top: 100px;
+	padding-top: 50px;
+	background-color: #8ba0a5;
+	&__content {
+	}
+	&__title {
+		@include text-body($primary-color, 36px);
+		text-align: center;
+	}
+	&__pluses {
+		margin-top: 50px;
+		&-point {
+			@include text-body($primary-color, 18px);
+			&-text {
+				margin-top: 50px;
+			}
+			&-about {
+			}
+			&:last-child {
+				padding-bottom: 50px;
+			}
+		}
+	}
+}
+//
+.we__content {
+}
+//
+.join {
+	margin-top: 80px;
+	&__content {
+	}
+	&__title {
+		text-align: center;
+		@include text-body($primary-color, 36px);
+	}
+	&__description {
+		@include text-body($primary-color, 18px);
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: $tablet) {
+	.career__img,
+	.team__img {
+		display: none;
+	}
+	.team__description {
+		text-align: center;
+		display: contents;
+	}
+
+	// .geo__content {
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	text-align: center;
+	// 	flex-wrap: wrap;
+	// 	gap: 30px;
+	// }
+}
+@media (max-width: $mobile-l) {
+	.career__title,
+	.team__title,
+	.we__title,
+	.join__title {
+		font-size: 30px;
+	}
+}

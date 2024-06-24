@@ -1,0 +1,22 @@
+.setting {
+	margin-top: 100px;
+	&__content {
+	}
+	&__title {
+		@include text-body($primary-color, 36px);
+	}
+	&__show {
+		background-color: $primary-color;
+		text-align: center;
+		padding: 40px 0;
+		margin-top: 40px;
+	}
+	&__title-buy {
+		margin-top: 40px;
+		@include text-body($black-color, 36px);
+	}
+	&__title-about {
+		@include text-accent($black-color, 20px, 500);
+		margin-top: 14px;
+	}
+}
